@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#f5f5f7" />
+  <meta name="description" content="A polished resident event demo for apartment communities and managed properties." />
+  <title>Resident Experience Demo | Experience Foundry</title>
+  <link rel="stylesheet" href="apple.css" />
+</head>
+<body class="ap-site ef-site" id="top">
+  <nav class="ap-nav" aria-label="Main navigation">
+    <div class="ap-nav-inner">
+      <a class="ap-wordmark ef-wordmark" href="index.html"><img src="assets/experience-foundry-mark.png" alt="" aria-hidden="true" /><span class="ef-brand-lockup"><strong>Experience Foundry</strong><small>Scaling Up Experiences</small></span></a>
+      <div class="ap-nav-links">
+        <a href="index.html#who">Who it’s for</a>
+        <a href="index.html#experiences">Experiences</a>
+        <a href="event.html">Properties</a>
+        <a href="company-demo.html">Companies</a>
+        <a href="private-demo.html">Private events</a>
+      </div>
+      <a class="ap-nav-button" href="index.html#contact">Start a conversation</a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="ap-page-hero">
+      <div class="ap-shell">
+        <p class="ap-kicker">For apartment communities & managed properties</p>
+        <h1>Give residents a reason<br><span class="ap-gradient">to come downstairs.</span></h1>
+        <p class="ap-page-copy">A branded event page, simple RSVP flow and vendor-operated experience can turn an existing amenity space into something residents actually talk about.</p>
+        <div class="ap-actions"><a class="ap-button ap-button-blue" href="#reserve">Preview RSVP</a><a class="ap-link" href="index.html#experiences">Explore equipment <span>›</span></a></div>
+      </div>
+    </section>
+
+    <section class="ap-page-stage">
+      <div class="ap-page-stage-copy">
+        <p class="ap-chip">HALLOWEEN PILOT</p>
+        <h2><span data-property-name>Your Apartment Community Name Here</span><br>360° Night.</h2>
+        <p>A free resident pilot built around one memorable centerpiece supplied and operated by an independent professional rental company, with a process that stays easy on onsite staff.</p>
+        <dl>
+          <div><dt>Date</dt><dd data-event-date>October 2026 · Date coming soon</dd></div>
+          <div><dt>Time</dt><dd data-event-time>Evening · Time coming soon</dd></div>
+          <div><dt>Where</dt><dd data-event-location>Community / Party Room</dd></div>
+          <div><dt>Cost</dt><dd>Free · Sponsored pilot</dd></div>
+        </dl>
+      </div>
+      <div class="ap-page-stage-media"><img src="https://orcavue.com/wp-content/uploads/360-Photo-Booth-By-OrcaVue.webp" alt="Illustrative 360 photo booth setup" /></div>
+    </section>
+
+    <section class="ap-section">
+      <div class="ap-shell">
+        <div class="ap-section-heading ap-center"><p class="ap-kicker">One page. One event. Very little friction.</p><h2>Built to make resident programming easier.</h2><p>The building does not need to become an event company. The experience can arrive as a finished package.</p></div>
+        <div class="ap-three-grid">
+          <article class="ap-info-card"><span class="ap-info-number">01</span><h3>Easy promotion</h3><p>Use the resident app, email and elevator flyers to send residents directly to one branded RSVP page.</p></article>
+          <article class="ap-info-card ap-info-dark"><span class="ap-info-number">02</span><h3>Rental-company supplied</h3><p>Experience Foundry does not supply the 360° booth. An independent professional rental partner provides the equipment and can handle setup, operation, troubleshooting and teardown.</p></article>
+          <article class="ap-info-card ap-info-warm"><span class="ap-info-number">03</span><h3>Measurable</h3><p>RSVPs, attendance and optional permissioned social posts show whether residents actually valued the event.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="ap-process">
+      <div class="ap-shell">
+        <div class="ap-section-heading ap-center"><p class="ap-kicker">How it works</p><h2>From elevator flyer to event night.</h2><p>A repeatable process that can later work across multiple properties.</p></div>
+        <div class="ap-process-grid">
+          <article><span>01</span><h3>Announce</h3><p>Management posts the event through channels residents already use.</p></article>
+          <article><span>02</span><h3>RSVP</h3><p>Residents select party size and preferred arrival window.</p></article>
+          <article><span>03</span><h3>Activate</h3><p>The vendor arrives, sets up the equipment and runs the attraction.</p></article>
+          <article><span>04</span><h3>Learn</h3><p>Review turnout, feedback and optional social content before planning the next event.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="ap-form-section" id="reserve">
+      <div class="ap-shell ap-form-grid">
+        <div><p class="ap-kicker">Resident demo</p><h2>Save a spot.</h2><p class="ap-contact-copy">This is the same low-friction RSVP flow a resident could reach by scanning an elevator QR code.</p><div class="ap-mini-note"><strong>Privacy stays separate.</strong> Event registration and permission to feature a resident’s social post are different choices.</div></div>
+        <form id="rsvpForm" class="ap-form">
+          <div class="ap-field-row"><label>First name<input required name="firstName" placeholder="Alex" maxlength="50" /></label><label>Unit number<input required name="unit" placeholder="1204" maxlength="12" /></label></div>
+          <div class="ap-field-row"><label>Party size<select required name="partySize"><option value="">Choose</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5+</option></select></label><label>Preferred arrival window<select required name="timeSlot" id="timeSlotSelect"></select></label></div>
+          <label>Email <span style="font-weight:400;color:#86868b">optional · event updates only</span><input name="email" type="email" placeholder="you@example.com" maxlength="120" /></label>
+          <label class="ap-check-row"><input type="checkbox" name="updatesOk" /><span>It’s okay to send me an update if event details change.</span></label>
+          <button class="ap-button ap-button-blue ap-submit" type="submit">Save My Demo RSVP</button>
+          <p class="ap-form-success" id="inlineRsvpSuccess" hidden>Demo RSVP saved in this browser.</p>
+        </form>
+      </div>
+    </section>
+
+    <section class="ap-gallery">
+      <div class="ap-shell"><div class="ap-section-heading ap-center"><p class="ap-kicker">After the event</p><h2>A permissioned social gallery.</h2><p>Approved resident posts can become authentic proof of engagement without automatically republishing anyone’s content.</p></div><div class="ap-gallery-grid"><div class="ap-gallery-tile">📹<span>360° clips</span></div><div class="ap-gallery-tile">🎃<span>Event moments</span></div><div class="ap-gallery-tile">✨<span>Resident reactions</span></div></div>
+        <form id="socialForm" class="ap-form" style="max-width:760px;margin:38px auto 0">
+          <label>Instagram or social post URL<input name="socialUrl" type="url" required placeholder="https://instagram.com/p/..." /></label>
+          <label class="ap-check-row"><input type="checkbox" name="permission" required /><span>I give Experience Foundry permission to feature this post in the event gallery or related case study. I understand I can choose not to submit anything.</span></label>
+          <button class="ap-button ap-button-blue ap-submit" type="submit">Submit for Gallery Review</button>
+          <p id="socialMessage" class="ap-form-success" hidden>Thanks — your post was submitted for review.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="ap-footer">
+    <div class="ap-shell">
+      <div class="ef-footer-brand"><img src="assets/experience-foundry-mark.png" alt="" aria-hidden="true" /><div><strong>Experience Foundry</strong><span>Scaling Up Experiences</span><em>Make the ordinary unforgettable.</em></div></div>
+      <p class="ap-disclaimer"><strong>Equipment & rental disclaimer:</strong> Experience Foundry does not manufacture, own or directly supply the 360° booth or other event equipment shown for the pilot. Equipment is sourced from independent professional rental companies. Product images and videos are illustrative examples only; actual products, models, features, appearance and vendors may differ based on rental availability, event requirements, location and final vendor selection. Third-party brands shown do not imply partnership, endorsement or affiliation. Costumes, decorations, props, candy and other party materials are not supplied by Experience Foundry unless separately arranged by the host or another vendor.</p>
+      <div class="ap-footer-bottom"><span>Prototype • Denver, Colorado</span><a href="#top">Back to top ↑</a></div>
+    </div>
+  </footer>
+  <dialog id="confirmDialog"><div style="padding:24px;max-width:420px"><h3 style="margin-top:0">You’re on the list.</h3><p id="confirmText"></p><button class="ap-button ap-button-blue" id="closeDialog">Done</button></div></dialog>
+  <script src="config.js"></script><script src="app.js"></script>
+  <script>document.querySelector('#rsvpForm')?.addEventListener('submit',()=>{setTimeout(()=>{const x=document.querySelector('#inlineRsvpSuccess');if(x)x.hidden=false},0)})</script>
+</body></html>
